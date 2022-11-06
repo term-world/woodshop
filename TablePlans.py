@@ -1,6 +1,10 @@
 from inventory.Item import FixtureSpec
 from inventory.Item import Factory
 
+"""
+Note: You do not need to browse this file unless interested.
+"""
+
 class Table(FixtureSpec):
 
     def __init__(self, lumber: list = []):

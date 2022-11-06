@@ -38,19 +38,17 @@ def main():
     
     items = [Table, Chair, Bookshelf]
 
-    total = 0
+    total_needed = 0
 
     for item in items:
-        total += item().required
+        total_needed += item().required
     
-    while remaining_wood(pile) < total:
+    while remaining_wood(pile) < total_needed:
          board = Lumber(10)
          pile.add(saw.cut(board))
 
     for item in items:
         obj = make(item, pile.pieces)
-    
-    print(remaining_wood(pile))
 
 if __name__ == "__main__":
     main()
