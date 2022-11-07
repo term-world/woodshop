@@ -1,5 +1,5 @@
 # TODOs
-- clean-up/reflection.md:
+- cleanup-room/reflection.md:
   - description: No TODO markers left in reflection.md
     check: MatchFileFragment
     options:
@@ -21,19 +21,19 @@
       count: 0
       exact: true
 # Reflection
-- clean-up/reflection.md:
+- cleanup-room/reflection.md:
   - description: No TODO markers left in reflection.md
     check: MatchFileFragment
     options:
       fragment: "TODO"
       count: 0
       exact: true
-- clean-up/reflection.md:
+- cleanup-room/reflection.md:
   - description: reflection.md responds to all questions
     check: CountFileParagraphs
     options:
       count: 5
-- clean-up/reflection.md:
+- cleanup-room/reflection.md:
   - description: reflection.md contains at least 350 words
     check: CountFileWords
     options:
