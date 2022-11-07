@@ -5,7 +5,7 @@ from inventory.Item import Factory
 Note: You do not need to browse this file unless interested.
 """
 
-class Table(FixtureSpec):
+class TablePlans(FixtureSpec):
 
     def __init__(self, lumber: list = []):
         self.lumber = lumber
@@ -14,6 +14,11 @@ class Table(FixtureSpec):
         self.build()
         if self.built:
             self.make()
+    
+    def __str__(self) -> str:
+        if self.built:
+            return "It's a table."
+        return "It's not a table yet."
 
     def build(self):
         sorted(

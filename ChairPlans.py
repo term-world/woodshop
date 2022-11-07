@@ -5,7 +5,7 @@ from inventory.Item import Factory
 Note: You do not need to browse this file unless interested.
 """
 
-class Chair(FixtureSpec):
+class ChairPlans(FixtureSpec):
 
     def __init__(self, lumber: list = []):
         self.lumber = lumber
@@ -14,6 +14,11 @@ class Chair(FixtureSpec):
         self.build()
         if self.built:
             self.make()
+    
+    def __str__(self) -> str:
+        if self.built:
+            return "It's a chair."
+        return "It's not a chair yet."
 
     def build(self):
         sorted(

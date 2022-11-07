@@ -5,7 +5,7 @@ from inventory.Item import Factory
 Note: You do not need to browse this file unless interested.
 """
 
-class Bookshelf(FixtureSpec):
+class BookshelfPlans(FixtureSpec):
 
     def __init__(self, lumber: list = []):
         self.lumber = lumber
@@ -14,8 +14,13 @@ class Bookshelf(FixtureSpec):
         self.build()
         if self.built:
             self.make()
+        
+    def __str__(self) -> str:
+        if self.built:
+            return "It's a bookshelf."
+        return "It's not a bookshelf yet."
 
-    def build(self):
+    def build(self) -> None:
         sorted(
             self.lumber, 
             key = lambda piece: piece.length
@@ -35,7 +40,7 @@ class Bookshelf(FixtureSpec):
             return False
         return True
 
-    def make(self):
+    def make(self) -> None:
         if self.built:
             Factory("Bookshelf", "./products")
         fixes = [
