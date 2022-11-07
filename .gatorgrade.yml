@@ -168,3 +168,13 @@
       regex: self\.pieces(\s)?\+=(\s)?
       count: 1
       exact: true
+# RECEIPTZZZ
+- products/Chair.py:
+  - description: Chair.py exists in the products/
+    check: ConfirmFileExists
+- products/Table.py:
+  - description: Chair.py exists in the products/
+    check: ConfirmFileExists
+- products/Bookshelf.py:
+  - description: Chair.py exists in the products/
+    check: ConfirmFileExists
