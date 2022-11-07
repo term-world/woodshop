@@ -52,7 +52,7 @@ If all of this is done correctly, you should see a `Chair.py`, `Table.py` and `B
 
 In order to complete the workload for the `woodpile` you'll first need to `clone` the `woodpile` repository into your `workshop`.
 
-When you `clone` a repository you're duplicating its contents and adding them to your local workspace. Since you'll be working collaboratively with your neighbors, you'll each need your own copy of the `bodega` to work with.
+When you `clone` a repository you're duplicating its contents and adding them to your local workspace. Since you'll be working collaboratively with your neighbors, you'll each need your own copy of the `woodpile` to work with.
 
 In order to keep some of the magic (read: somewhat convoluted code) that makes `term-world` work the way it does, **you are required to clone all additional repositories within the `workshop`, located within your `garage`.**
 
@@ -69,7 +69,7 @@ Once you've copied this link, navigate to your terminal window and ensure you're
 git clone COPIED-LINK-HERE
 ```
 
-Be sure to replace the fragment `COPIED-LINK-HERE` with the link you copied. In the example regarding `bodega-Ix`, the full command would look like:
+Be sure to replace the fragment `COPIED-LINK-HERE` with the link you copied. In the example regarding `woodpile-dluman`, the full command would look like:
 
 ```
 git clone git@github.com:term-world/woodshop-dluman
