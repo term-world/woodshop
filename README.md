@@ -48,35 +48,6 @@ If all of this is done correctly, you should see a `Chair.py`, `Table.py` and `B
 
 [![YouTube thumbnail](http://img.youtube.com/vi/cJAXqu65W2s/hqdefault.jpg)](https://youtube.com/playlist?list=PLJvBsjwXNdlF99gvu4u3TIqBVk87xYirA)
 
-## Accessing `woodpile` Content
-
-In order to complete the workload for the `woodpile` you'll first need to `clone` the `woodpile` repository into your `workshop`.
-
-When you `clone` a repository you're duplicating its contents and adding them to your local workspace. Since you'll be working collaboratively with your neighbors, you'll each need your own copy of the `woodpile` to work with.
-
-In order to keep some of the magic (read: somewhat convoluted code) that makes `term-world` work the way it does, **you are required to clone all additional repositories within the `workshop`, located within your `garage`.**
-
-Head to GitHub and:
-* click on the green `Code` button
-* ensure that `SSH` is selected
-* copy the link that appears in the window below
-
-It might look something like `git@github.com:term-world/woodpile-dluman`.
-
-Once you've copied this link, navigate to your terminal window and ensure you're still in the appropriate place (in this case, the topmost level of your `workshop`). Then, enter the command:
-
-```
-git clone COPIED-LINK-HERE
-```
-
-Be sure to replace the fragment `COPIED-LINK-HERE` with the link you copied. In the example regarding `woodpile-dluman`, the full command would look like:
-
-```
-git clone git@github.com:term-world/woodshop-dluman
-```
-
-While `pull` is used to *update* the contents of a repository that already exists in your local workspace, `clone` is used to *replicate* the contents of a repository from GitHub and copy them to your local workspace.
-
 ## Completing `woodshop` content
 
 For this activity, you'll need to complete the following steps for all of your `woodshop` items, creating a (somewhat) autonomous factory.
@@ -170,37 +141,10 @@ Two more items to finish up before we're done this week:
   * this does not necessarily count as your _improvement_
 * finish the `reflection.md` file in the `clean-up` folder
 
-## Submitting `woodshop` Content
+## Backup Policy Reminder
 
-Considering that the work you're doing for the `woodshop` is individual, there's no need to branch your work. However, getting in the habit of doing so is a _good habit_.
+**While we may use this server to store code, you are responsible for using GitHub as your main backup.**
 
-When you're ready to push to GitHub, do the normal `add` and `commit` routines. Recall:
+In the event that the `term-world` server goes down for any unforeseen reason, your work may be lost. Though this server is backed up on a regular (i.e. weekly) basis, there is no guarantee that up-to-the-minute data for your work will be restored.
 
-```
-git add NAME_OF_FILE_OR_DIRECTORY_TO_ADD
-```
-
-You may need to do this for either:
-
-* Individual files (i.e. `git add Thingamajig.py`)
-* Directories (i.e. `git add Thingamajig`)
-
-```
-git commit -m "Descriptive commit message"
-```
-
-### Pushing to a branch
-
-**_If you choose to work only on `main`, ignore this section, and `push` to `main` normally._**
-
-But, if you're branching--when it comes to push, run this slightly expanded command:
-
-```
-git push origin YOUR_BRANCH_NAME
-```
-
-We're still using `git push`, but this time we're adding an extra layer of information to the command; to be precise, we're specifically instructing `git` to push our changes to a particular branch of the repository (*your* branch). In the example regarding the `gadgets` department, the command to run would look like:
-
-```
-git push origin gadgets
-```
+Remember: to err is human; to back up your work is *divine*.
